@@ -1,0 +1,9 @@
+export const REQUEST_JOIN_TABLE                = 1;
+export const REQUEST_TO_PLAY                   = 2;
+export const PLAY_HIT                          = 3;
+export const PLAY_STAY                         = 4;
+export const JOIN_TABLE_RESPONSE               = 5;
+export const JOIN_TABLE_BROADCAST_RESPONSE     = 6;
+export const REQUEST_ACCEPTED                  = 7;
+export const REQUEST_DENIED                    = 8;
+export const UPDATE_TABLE_STATE_BROADCAST_RESPONSE     = 9;
