@@ -1,0 +1,11 @@
+.card-view-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+}

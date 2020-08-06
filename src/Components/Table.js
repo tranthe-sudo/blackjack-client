@@ -52,12 +52,10 @@ class Table extends React.Component {
                     }
                 });
 
-                // this.setPlayerID();
 
             } else if (  response.event === UPDATE_TABLE_STATE_BROADCAST_RESPONSE ) {
                 // Using stored ID for each player to update each playerObj
                 // Including update the dealer Object
-                localStorage.setItem("players", JSON.stringify(response.data.players));
 
 
                 response.data.players.forEach(obj => {
@@ -90,21 +88,11 @@ class Table extends React.Component {
                         }
                     });
                 }
-
-                localStorage.setItem("1", JSON.stringify(this.playerAtPos1.cards));
-                localStorage.setItem("2", JSON.stringify(this.playerAtPos2.cards));
-                localStorage.setItem("3", JSON.stringify(this.playerAtPos3.cards));
             }
             
             // get call after every received JOIN_TABLE_RESPONSE
             // or every time a new user join the table
             this.setPlayerID();
-            
-            
-
-            // localStorage.setItem("1ID", JSON.stringify(this.playerAtPos1_ID));
-            // localStorage.setItem("2ID", JSON.stringify(this.playerAtPos2_ID));
-            // localStorage.setItem("3ID", JSON.stringify(this.playerAtPos3_ID));
 
             this.setState({
                 update: true,
